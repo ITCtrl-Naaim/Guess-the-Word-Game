@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Word Game</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Guess the Word</h1>
+    </header>
+    <main>
+      <div class="responsive-container">
+        <section class="guess-section">
+          <div class="tries-container"></div>
+          <div class="controls">
+            <button type="button" class="check-btn">Check Word</button>
+            <button type="button" class="hints-btn">Hints</button>
+          </div>
+          <div class="result-msg"></div>
+        </section>
+        <section class="key-colors-section">
+          <h2 class="key-colors-title">Key Colors</h2>
+          <div class="key-color-row">
+            <div class="key in-place"></div>
+            <div class="key-text">Letter Is Correct and In Place</div>
+          </div>
+          <div class="key-color-row">
+            <div class="key not-in-place"></div>
+            <div class="key-text">Letter Is Correct but Not In Place</div>
+          </div>
+          <div class="key-color-row">
+            <div class="key wrong-letter"></div>
+            <div class="key-text">Letter Is Wrong</div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>Guess the Word game created by <a href="#">Naaim Karim</a></p>
+    </footer>
+    <audio src="./Audio/hint.mp3" id="hint-audio"></audio>
+    <audio src="./Audio/fail.mp3" id="fail-audio"></audio>
+    <audio src="./Audio/game-over-fail.wav" id="game-over-failure-audio"></audio>
+    <audio src="./Audio/success.wav" id="game-over-success-audio"></audio>
+    <script src="./script.js"></script>
+  </body>
+</html>
